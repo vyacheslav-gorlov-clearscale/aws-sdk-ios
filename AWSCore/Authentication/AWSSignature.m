@@ -494,7 +494,11 @@ NSString *const AWSSignatureV4Terminator = @"aws4_request";
         } else {
             pathToEncode = urlComponents.path;
         }
-        NSString *canonicalURI = [NSString stringWithFormat:@"/%@", [pathToEncode aws_stringWithURLEncodingPath]];
+        
+        NSString *canonicalURI = [NSString stringWithFormat:@"/%@",
+                                 [[[pathToEncode stringByRemovingPercentEncoding]
+                                 aws_stringWithURLEncodingPath]
+                                 aws_stringWithURLEncodingPathWithoutPriorDecoding]];
 
         NSString *contentSha256;
         if(signBody && [request.HTTPMethod isEqualToString:@"GET"]){
