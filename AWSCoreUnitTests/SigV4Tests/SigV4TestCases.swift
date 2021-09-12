@@ -23,7 +23,6 @@ import AWSCore
 /// Credentials provider for the various tests. Keys and tokens are hardcoded in the `generate_swift_test_cases` script
 struct SigV4TestCredentials {
     static let regionName = "us-east-1"
-    static let serviceName = "service"
 
     // 20150830T123600Z
     static let testDate = Date(timeIntervalSince1970: 1440938160)
@@ -54,6 +53,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -105,6 +105,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -156,6 +157,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -211,6 +213,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -262,6 +265,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -313,6 +317,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -364,6 +369,7 @@ credentialsProvider: SigV4TestCredentials.sessionTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -415,6 +421,7 @@ credentialsProvider: SigV4TestCredentials.sessionTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: true,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -468,6 +475,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -519,6 +527,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -574,6 +583,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -631,6 +641,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -682,6 +693,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -739,6 +751,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -790,6 +803,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -841,6 +855,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -894,6 +909,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -943,6 +959,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -994,6 +1011,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1045,6 +1063,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1101,6 +1120,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1152,6 +1172,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1203,6 +1224,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1256,6 +1278,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1307,6 +1330,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1358,6 +1382,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1409,6 +1434,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1460,6 +1486,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1511,6 +1538,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1562,6 +1590,7 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: false,
 shouldSignSecurityToken: false,
+serviceName: "service",
 
 // When
 originalRequest:
@@ -1601,6 +1630,108 @@ AWS4-HMAC-SHA256
 signature:
 """
 85e97ffeac044f345cc5fab027dee6b6e0734b6e7682111d6e168c00dfe2e18a
+"""
+),
+
+// MARK: - Test Case "get-s3-specialchars"
+
+SigV4TestCase(
+
+testCaseName: "get-s3-specialchars",
+
+// Given
+
+credentialsProvider: SigV4TestCredentials.basicTestCredentials,
+
+shouldSignBody: true,
+shouldSignSecurityToken: true,
+serviceName: "s3",
+
+// When
+originalRequest:
+"""
+GET /a%3Ab/%26%24%40%3D%3B%3A%2B%20%2C%3F.zip HTTP/1.1
+Host:example.amazonaws.com
+X-Amz-Date:20150830T123600Z
+""",
+
+// Then
+expectedPresignedURL: "https://example.amazonaws.com/a%3Ab/%26%24%40%3D%3B%3A%2B%20%2C%3F.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIDEXAMPLE%2F20150830%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20150830T123600Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host%3Bx-amz-date&X-Amz-Signature=862c9a61c9079ce9f918b144c746d801e20f476df42cb331fc1ad6c1e206a144",
+
+canonicalRequest:
+"""
+GET
+/a%3Ab/%26%24%40%3D%3B%3A%2B%20%2C%3F.zip
+X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIDEXAMPLE%2F20150830%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20150830T123600Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host%3Bx-amz-date
+host:example.amazonaws.com
+x-amz-date:20150830T123600Z
+
+host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+""",
+
+stringToSign:
+"""
+AWS4-HMAC-SHA256
+20150830T123600Z
+20150830/us-east-1/s3/aws4_request
+62a83f6b07e24288441e1bec24708ee573de60786832bbef3b54029f524e7ebb
+""",
+
+signature:
+"""
+862c9a61c9079ce9f918b144c746d801e20f476df42cb331fc1ad6c1e206a144
+"""
+),
+
+// MARK: - Test Case "get-specialchars"
+
+SigV4TestCase(
+
+testCaseName: "get-specialchars",
+
+// Given
+
+credentialsProvider: SigV4TestCredentials.basicTestCredentials,
+
+shouldSignBody: true,
+shouldSignSecurityToken: true,
+serviceName: "service",
+
+// When
+originalRequest:
+"""
+GET /maps/v0/maps/GeoTestMap/glyphs/Noto%20Sans%20Italic/0-255.pbf HTTP/1.1
+Host:example.amazonaws.com
+X-Amz-Date:20150830T123600Z
+""",
+
+// Then
+expectedPresignedURL: "https://example.amazonaws.com/maps/v0/maps/GeoTestMap/glyphs/Noto%20Sans%20Italic/0-255.pbf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIDEXAMPLE%2F20150830%2Fus-east-1%2Fservice%2Faws4_request&X-Amz-Date=20150830T123600Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host%3Bx-amz-date&X-Amz-Signature=9da808880f614667ea85b051a3a923e9c2803c67e19a69c17961f7a5a7036644",
+
+canonicalRequest:
+"""
+GET
+/maps/v0/maps/GeoTestMap/glyphs/Noto%2520Sans%2520Italic/0-255.pbf
+X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIDEXAMPLE%2F20150830%2Fus-east-1%2Fservice%2Faws4_request&X-Amz-Date=20150830T123600Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host%3Bx-amz-date
+host:example.amazonaws.com
+x-amz-date:20150830T123600Z
+
+host;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+""",
+
+stringToSign:
+"""
+AWS4-HMAC-SHA256
+20150830T123600Z
+20150830/us-east-1/service/aws4_request
+cc9bc93d26ffe2cf1dbd390436a369cc3ae284d4ab0742f8b022f47091052046
+""",
+
+signature:
+"""
+9da808880f614667ea85b051a3a923e9c2803c67e19a69c17961f7a5a7036644
 """
 ),
 

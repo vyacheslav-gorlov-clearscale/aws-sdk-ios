@@ -28,6 +28,7 @@ struct SigV4TestCase {
     let credentialsProvider: AWSCredentialsProvider
     let shouldSignBody: Bool
     let shouldSignSecurityToken: Bool
+    let serviceName: String
 
     // When we presign this original request
     let originalRequest: String
