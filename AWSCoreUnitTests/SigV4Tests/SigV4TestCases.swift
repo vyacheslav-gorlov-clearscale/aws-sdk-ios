@@ -51,10 +51,6 @@ testCaseName: "get-vanilla-utf8-query",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -103,10 +99,6 @@ testCaseName: "get-vanilla-query-order-key-case",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -154,10 +146,6 @@ testCaseName: "get-header-value-trim",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -211,10 +199,6 @@ testCaseName: "get-vanilla-query-unreserved",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -262,10 +246,6 @@ testCaseName: "get-vanilla-query-order-key",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -315,10 +295,6 @@ testCaseName: "get-vanilla",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -366,10 +342,6 @@ testCaseName: "post-sts-header-after",
 // Given
 
 credentialsProvider: SigV4TestCredentials.sessionTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -419,9 +391,7 @@ testCaseName: "post-sts-header-before",
 
 credentialsProvider: SigV4TestCredentials.sessionTestCredentials,
 
-shouldSignBody: false,
 shouldSignSecurityToken: true,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -473,10 +443,6 @@ testCaseName: "get-unreserved",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -524,10 +490,6 @@ testCaseName: "get-header-value-multiline",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -580,10 +542,6 @@ testCaseName: "post-x-www-form-urlencoded-parameters",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -639,10 +597,6 @@ testCaseName: "post-vanilla",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -690,10 +644,6 @@ testCaseName: "post-x-www-form-urlencoded",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -749,10 +699,6 @@ testCaseName: "post-header-key-case",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -801,10 +747,6 @@ testCaseName: "get-vanilla-empty-query-key",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -852,10 +794,6 @@ testCaseName: "post-header-key-sort",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -907,10 +845,6 @@ testCaseName: "aws-mobile-sdk-get-s3-sample",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -956,10 +890,6 @@ testCaseName: "post-vanilla-empty-query-value",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -1009,10 +939,6 @@ testCaseName: "get-vanilla-query",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -1060,10 +986,6 @@ testCaseName: "get-header-value-order",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -1118,10 +1040,6 @@ testCaseName: "post-vanilla-query",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -1170,10 +1088,6 @@ testCaseName: "get-vanilla-query-order-value",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -1221,10 +1135,6 @@ testCaseName: "post-header-value-case",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -1276,10 +1186,6 @@ testCaseName: "get-slash",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -1327,10 +1233,6 @@ testCaseName: "get-slashes",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -1380,10 +1282,6 @@ testCaseName: "get-relative",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -1431,10 +1329,6 @@ testCaseName: "get-slash-pointless-dot",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -1484,10 +1378,6 @@ testCaseName: "get-slash-dot-slash",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -1536,10 +1426,6 @@ testCaseName: "get-relative-relative",
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
-
 // When
 originalRequest:
 """
@@ -1587,10 +1473,6 @@ testCaseName: "get-header-key-duplicate",
 // Given
 
 credentialsProvider: SigV4TestCredentials.basicTestCredentials,
-
-shouldSignBody: false,
-shouldSignSecurityToken: false,
-serviceName: "service",
 
 // When
 originalRequest:
@@ -1696,7 +1578,6 @@ credentialsProvider: SigV4TestCredentials.basicTestCredentials,
 
 shouldSignBody: true,
 shouldSignSecurityToken: true,
-serviceName: "service",
 
 // When
 originalRequest:
