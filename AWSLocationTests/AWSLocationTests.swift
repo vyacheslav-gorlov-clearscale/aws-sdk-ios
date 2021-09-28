@@ -59,10 +59,32 @@ class AWSLocationTests: XCTestCase {
 
     func testGetMapAssetsWithSpecialChars() {
         let testURLs = [
-//            "https://\(host!)/maps/v0/maps/\(mapName!)/sprites/sprites@2x.json",
-            "https://\(host!)/maps/v0/maps/\(mapName!)/Noto%20Sans%20Regular/0-255.pbf"
+            "https://\(host!)/maps/v0/maps/\(mapName!)/sprites/sprites@2x.json",
+            "https://\(host!)/maps/v0/maps/\(mapName!)/glyphs/Noto%20Sans%20Regular/0-255.pbf"
         ]
         testServiceCalls(testURLs)
+    }
+    
+    func testSearchForText() {
+        let request = AWSLocationSearchPlaceIndexForTextRequest()!
+        request.text = "coffee shops"
+        request.biasPosition = [-104.9903, 39.7392]
+        request.indexName = placeIndexName
+        
+        let expResponse = expectation(description: "Search response")
+        
+        location.searchPlaceIndex(forText: request) { response, error in
+            XCTAssertNil(error, error!.localizedDescription)
+            XCTAssertNotNil(response, "Failed to get search results.")
+            guard let resultCount = response?.results?.count else {
+                XCTFail("Failed to get search results.")
+                return
+            }
+            XCTAssertGreaterThan(resultCount, 0, "Failed to get search results.")
+            expResponse.fulfill()
+        }
+        
+        waitForExpectations(timeout: timeout)
     }
     
     private func testServiceCalls(_ testURLs: [String]) {
@@ -78,7 +100,6 @@ class AWSLocationTests: XCTestCase {
                     XCTAssertEqual(response.statusCode,
                                    200,
                                    "Received the following http status code: \(response.statusCode)")
-                    dump(response)
                     expResponse.fulfill()
                 }
                 if let data = data {
@@ -98,8 +119,8 @@ class AWSLocationTests: XCTestCase {
     }
     
     private func getSignedURLRequest(_ testURL: String) -> URLRequest {
-        let url = URL(string: testURL)!
-        XCTAssertNotNil(url, "Failed to create URL from String.")
+        let url: URL! = URL(string: testURL)
+        XCTAssertNotNil(url, "Failed to create URL from String: \(testURL)")
         
         var urlRequest = URLRequest(url: url)
         urlRequest.addValue(host, forHTTPHeaderField: "host")
